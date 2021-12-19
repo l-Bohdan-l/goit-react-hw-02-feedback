@@ -1,0 +1,35 @@
+.list {
+  list-style: none;
+}
+
+.button {
+  background-color: rgb(236, 141, 24);
+  border: 1px solid #222222;
+  border-radius: 8px;
+  color: #ebebeb;
+  text-shadow: 3px 5px 6px #936d40;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.button:focus,
+.button:hover {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+.button:active {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
+}

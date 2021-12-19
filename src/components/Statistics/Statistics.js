@@ -1,5 +1,6 @@
 import { Notification } from '../Notifications/Notification';
 import PropTypes from 'prop-types';
+import styles from './Statistics.module.scss';
 
 export const Statistics = ({
   good,
@@ -13,7 +14,7 @@ export const Statistics = ({
   return (
     <div>
       {!!totalFeedback ? (
-        <ul>
+        <ul className={styles.list}>
           <li>Good: {good}</li>
           <li>Neutral: {neutral}</li>
           <li>Bad: {bad}</li>
@@ -26,13 +27,6 @@ export const Statistics = ({
     </div>
   );
 };
-
-// Statistics.defaultProps = {
-//     good: 0,
-//   neutral: 0,
-//   bad: 0,
-//   total: 0,
-// }
 
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,

@@ -1,7 +1,6 @@
 import './App.scss';
 import React from 'react';
 import { Component } from 'react';
-import { Feedbcak } from './components/Feedback/Feedback';
 import { FeedbackOptions } from './components/FeedbackOptions/FeedbackOptions';
 import { Section } from './components/Section/Section';
 import { Statistics } from './components/Statistics/Statistics';
